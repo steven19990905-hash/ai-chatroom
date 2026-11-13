@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="AI 聊天室" />
+  <meta name="theme-color" content="#0b0f19" />
+  <link rel="apple-touch-icon" href="data:image/png;base64,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" />
+  <link rel="icon" type="image/png" href="data:image/png;base64,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" />
+  <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIkdlbWluaSDDlyBHUFQg6ZuZIEFJIOiBiuWkqeWupCIsICJzaG9ydF9uYW1lIjogIkFJIOiBiuWkqeWupCIsICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLCAiYmFja2dyb3VuZF9jb2xvciI6ICIjMGIwZjE5IiwgInRoZW1lX2NvbG9yIjogIiMwYjBmMTkiLCAiaWNvbnMiOiBbeyJzcmMiOiAiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFMUUFBQUMwQ0FZQUFBQTl6UVl5QUFBSnhrbEVRVlI0MnUzZDk5c2RSUm5HOGZNTGFZUWtoUFJDUWlBa0lLQ0lZQU1Sa1lSQVFsUVFCYnNpU0lEMDNudXZieEtWYXNQZXU5aDdRUkFWZThYMmR3eG5aM2IyN0lraFo4Lzc3cDUzNWo3ZjU3cnUvK0R6dzE0Nzk4eFRtei9yZithbVdmOU44eCtiZWJPVC9MdVI2LzlsNW1aNXhtWE9NK2JHT2Y5czVJWi8yTnhnODNlWEc1UDh6Y3p4bWZ2WExOZlAvWXZMdkQ5bm1UM3ZUMmIyVFQ1L05MTjg1djhoeTNYemYyK3VlNDNQNzJ4ZW5lUzFUK2Z5VzNQdDYzeCtrK1ZWTi84NnpWTXV0enhscnJubFY3azhhYTU1L1pQbWxUWlB1Tno2aExuNjFsL204cmk1K2cyUG0xZlkvTUxsalVsK2JxN0s4ak56MVcwdVY5NzJVNWZiay96RTV1VzMvOWpsVFVsK1pQT3lKRy8rWVM0L01DOU44cFlrMzgveWtyZCtMNWZ2bWhjbmVWdVM3MlM1NHUzZnp1VmJOcGUvNDV1NVBHWXVmK2RqNWtVMjMyamtYVjgzbDJYNW1ybnNEcGNYM3ZIVlJ0NzlGWnRMYmI1c0xyM1Q1UVYzZnFtUnU3NW84L3k3dnVEeW5pU2Z0N25FNW5QbWtydDlQbXN1VHJJZ3lXZXlYTFRnMCthaWUzdytaZk84ZTVOOE1wZFBtQXZ2OC9tNFRRM01ZRmJCZk9IQ0REU1l3UncvNWdzV2Zpd0JEV1l3YTJET1FJTVp6QXFZTDFqNFVWTURNNWhWTUtlZ3dReG1EY3d6RitWQmd4bk1rV09ldWVqUkZEU1l3U3lBMllFR001aEZNRnZRWUFhekN1YVppei9pUVlNWnpQRmpudUZBZ3huTUdwZ2JvTUVNWmdITU14Wi91QTRhekdBV3dXeEJneG5NS3BobkxNbURCak9ZSThkOC9wSVBwYURCREdZQnpBNDBtTUVzZ2prRERXWXdLMkErZitrSFRRM01ZRmJCbklJR001ZzFNRS9QUUlNWnpBS1lweS85UUIwMG1NRXNnamtGRFdZd2EyQ2V2cXdPR3N4Z1ZzRThmZGtqS1dnd2cxa0E4M2tXTkpqQkxJSzVDVFNZd1J3NzV2T1dQK3hBZ3huTUNwZ3RhRENEV1FWekF6U1l3U3lBK2R6bEQ5VkJneG5NSXBpYlFJTVp6TEZqUG5mRmd3NDBtTUdzZ05tQ0JqT1lWVEE3MEdBR3N3am1hU3NlOEtEQkRPYjRNVTliYVVHREdjd2FtQzFvTUlOWkJmTzBsZmVub01FTVpnSE01MWpRWUFhekNPWW0wR0FHYyt5WXoxbjFmZ2NhekdCV3dHeEJneG5NS3BnZGFEQ0RXUVR6MUZYdjg2REJET2I0TVU5ZGJVR0RHY3dhbURQUVlBYXpBdWFwcTk5cmFtQUdzd3BtQnhyTVlCYkJQS1VaTkpqQkhEZm1LV3VPZTlCZ0JuUDhtRlBRWUFhekJtWUxHc3hnVnNFOFpjMHhEeHJNWUk0Zjg5bHJMV2d3ZzFrRGN4Tm9NSU01ZHN4bnJ6M3FRSU1aekFxWUxXZ3dnMWtGY3c0MG1NRWNQK2JKNjNvUzBHQUdzd2JtQm1nd2cxa0E4K1IxUitxZ3V4UnpNbURXd214QmR5dG1QMkRXd1R4NWZSUG83c1BjaEJyTTBXT2V0UDZ3QjkyOW1QMm9ZVTZtMnpDbm9NSGNRQjBmNXQ2TUttWUhHc3pOcUNQQVhPWW9ZWjYwL3BDcGdmbi9KMVRNVlk0QzVra2JMR2d3bnhSMVFKZzdPVEZqbnBpQkJ2TkpwOXN3WjZnanhUeHh3OEU2YU5FVHdISkFkeDltUHpGaXRxQlZqN05MQWQybG1EUFVrV0dldUxFSnRGWTNveXpRM1lyWlQweVlKMnc4NEVIckZZM0ttRmd3dDNObzBpdlVrV0JPUVd1MjVrb0ZIU2ptdnB3QTlnWjE2SmdkYU5FS2FHbWdBOFJjNW5GMk94TTY1Z2tiOTV1YWFwKzVGTkFCSHBwVTBjMW9EM1M0bUNkc3NxQTF5L2xsZ1ZiSDdQOWtGSjJRTVkvUFFBdmVOQ2xqUXVwbWRLSTFWeGgwb0pqSGI5cFhCeTE2YmFvMDBGMkMyZithSzRRNlVNd3A2TzQ2enE1cWVsc0JyZnB2UnJ2ZGpLS2dROFE4Zm5NZE5KakxteXI2elAxUnptODFvV0lldjNtdkJ3M20wbENYWE03dnkzL20zcmJtaWt5SW1NYzUwR0F1SDNXeGExTmxZeTdTeXlqYXpXZ05PanpNRGpTWUs1a2lkd0JiZ2k0SmN4NTEwVzVHRWRDaFlSNjNlWThERGVZcVVULzNoZGJXZC8vS3c5eFVOaXJReldnMUlXSWV0NlVPR3N6VnpxbHVaeGNEM2ZxYnVZcWlVVXZRQVdKdWdBWnp4YWlmKzZtQlU0TXV2MmhVdERWWEhIUTRtTWR1MlYwSERlYk9vRzRUY3dhNjVOYWM3V1FVYU0wVm1kQXdwNkQxYnBxRWp0bS9hTlFTZE1IL3pHVmpUdjR6eDRoNTdOWVV0R0k1UDNUTXlTKzVWdE9mRmRCV0V5TG1zVnQzbVpweW56bGt6RzJCYm5FQzJEN28xaFhRWXFERHd0d0FMVndCRFJWellkQUZqN1BMeEp6OFkyNE5PanpNWTdidXJJUHVndFpjaUppVFE1T1dvTnZzWnBTRnVSM1FJV0ZPUVlmL2NyNGk1aGtGUU5zK1JoOWFjNzI5QTFoa1FzUThabHNLT29ZMUVHcVkvYUZKYTlDZGYyc3VWc3hqdHUwd3RaaDJtcWhoTGdLNkw2MjVLakFuRXlwbUIxcDBRVThuVzNOOWVUbS9HT2pPdlRWWEhIUjRtRWMzZzliYU5sVk91YWd6YXlBS05lWEEzQkx6Nk8zYlBXaTkxV21kcW9DV3NkT2s2UFEzWmdjNlhNd3BhTTA5Z09XQ3JuNUJUMXYxVHpDZkZMTUZyYnJVc2hOOTVqSzNUVlZSQVMwVGN3WTZZTXlqdDIrcmd4YmQwRm9PNk02dVRxdWlOZGVYdnhteFlSN2xRR3V1RzY2Nm5GL1ZIc0JlMVVGTFBqU0pGZk9vSFRuUWFydXp5d1BkK2FXV0lVMU1tRWZ0Mk9wQUt5NkNyL0ttU1NjMnRJSzVmY3dXdENMbWk4c0UzWS9yaHNIY0h1WVRRT3RnVHQ2YTY4L2o3RTYvTlFkbWw3TjJidkdndFREN2QrWml4OXpPZTNOZzN1SkJhMkwyRHlmR2pqbi9hNjV5eUpGanRxQ1ZNZnVIRXhVd3QvTUlUSHVRZTJRd243VnpjeDIwT0diL2NLSUs1blp2WjhmV1orNEw1cEVPdEQ1bTM1cFR3M3lxSjIyVENmV3BnYW93ajl5VkE2Mk8rVlRicHRRd2gvaWlVU2N3ajl5MXlZSHVGc3duV3dNQlpoM01GblMzWWM0L05nNW1MY3duZ080ZXpQMTlBZ2ptYWpDZnVYdWpCdzFtTU1lUE9RVU5aakJyWU01QWd4bk1DcGpQM0wzQjFNQU1aaFhNSjRBR001amp4anhpejNvUEdzeGdqaDl6Q2hyTVlOYkE3RUNER2N3aW1FZnNXV2RxWUFhekN1WVJleTFvTUlOWkEvUHdKdEJnQm5Qa21JZnZYWnVDQmpPWUJUQTcwR0FHc3dobUN4ck1ZRmJCUEh6ZkdnOGF6R0NPSC9Nd0J4ck1ZTmJBN0VDREdjd2ltSWZ0VysxQWd4bk1DcGlIN2ErREJqT1lWVEEzZ3dZem1DUEhmTWIrVlNsb01JTlpBTE1ERFdZd2kyRE9RSU1aekFxWXp6aXcwdFRBREdZVnpDbG9NSU5aQS9OUUN4ck1ZQmJCUFBUQUNnY2F6R0JXd0R6MFlCMDBtTUdzZ3JrWk5KakJIRG5tMHc4dVQwR0RHY3dDbUIxb01JTlpCSE1HR3N4Z1ZzQjgrcUZscGdabU1LdGdib0FHTTVnRk1BODV0TFFPR3N4Z0ZzR2NnZ1l6bURVd0R6bWNnZ1l6bUJVd0R6bTh4TlRBREdZVnpDbG9NSU5aQS9OZ0N4ck1ZQmJCUFBqd1lnOGF6R0NPSC9QZ0l4WTBtTUdzZ2RtQ0JqT1lWVEFQUHJLb0Rock1ZQmJCUE1pQkJqT1lOVEFQNnNtQkJqT1lZOGM4cUdlaEF3MW1NQ3RndHFEQkRHWVZ6QTQwbU1Fc2dubGd6MzBlTkpqQkhEL21nVWN0YURDRFdRTnpCaHJNWUZiQVBQRG92YVlHWmpDcllFNUJneG5NR3BnSEhHc0NEV1l3eDQxNXdMRjdQR2d3Z3psK3pDbG9NSU5aQTdNRkRXWXdxMkFlY0d5QkJ3MW1NTWVQK2JUakZqU1l3YXlCdVFFYXpHQVd3SHphOGJ2TnM0WGNzcjhINmVabkFBQUFBRWxGVGtTdVFtQ0MiLCAic2l6ZXMiOiAiMTgweDE4MCIsICJ0eXBlIjogImltYWdlL3BuZyJ9XX0=" />
+  <title>Gemini × GPT 雙 AI 對話聊天室</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-main: #0b0f19;
+      --bg-surface: #111827;
+      --bg-elevated: #1f2937;
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --text-primary: #f3f4f6;
+      --text-secondary: #9ca3af;
+    }
+    body.light-mode {
+      --bg-main: #f3f4f6;
+      --bg-surface: #ffffff;
+      --bg-elevated: #f9fafb;
+      --border-subtle: rgba(0, 0, 0, 0.08);
+      --text-primary: #111827;
+      --text-secondary: #4b5563;
+    }
+    body {
+      font-family: 'Inter', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-primary);
+      transition: background-color 0.2s ease, color 0.2s ease;
+      -webkit-tap-highlight-color: transparent;
+      overscroll-behavior-y: none;
+    }
+    .safe-top {
+      padding-top: max(0.625rem, env(safe-area-inset-top));
+    }
+    .safe-bottom {
+      padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+    }
+    .surface-card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+    }
+    .elevated-card {
+      background-color: var(--bg-elevated);
+      border: 1px solid var(--border-subtle);
+    }
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(156, 163, 175, 0.3);
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(156, 163, 175, 0.5);
+    }
+    /* Typing dots animation */
+    @keyframes bounceDot {
+      0%, 80%, 100% { transform: scale(0); opacity: 0.4; }
+      40% { transform: scale(1); opacity: 1; }
+    }
+    .typing-dot {
+      animation: bounceDot 1.4s infinite ease-in-out both;
+    }
+    .typing-dot:nth-child(1) { animation-delay: -0.32s; }
+    .typing-dot:nth-child(2) { animation-delay: -0.16s; }
+    /* Prose styling for chat bubbles */
+    .chat-prose p { margin-bottom: 0.5rem; line-height: 1.6; }
+    .chat-prose p:last-child { margin-bottom: 0; }
+    .chat-prose ul, .chat-prose ol { margin: 0.4rem 0 0.5rem 1.25rem; }
+    .chat-prose ul { list-style-type: disc; }
+    .chat-prose ol { list-style-type: decimal; }
+    .chat-prose li { margin-bottom: 0.2rem; }
+    .chat-prose code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.85em;
+      padding: 0.12rem 0.35rem;
+      border-radius: 0.25rem;
+      background: rgba(128, 128, 128, 0.2);
+    }
+    .chat-prose pre {
+      margin: 0.5rem 0;
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+      background: rgba(0, 0, 0, 0.35);
+      overflow-x: auto;
+      font-size: 0.82em;
+    }
+    body.light-mode .chat-prose pre {
+      background: #1f2937;
+      color: #f3f4f6;
+    }
+    .chat-prose pre code {
+      background: transparent;
+      padding: 0;
+    }
+    .chat-prose strong { font-weight: 600; }
+  </style>
+</head>
+<body class="h-[100dvh] flex flex-col overflow-hidden">
+
+  <!-- Top Navigation Bar -->
+  <header class="surface-card border-b px-3 sm:px-5 safe-top pb-2.5 flex items-center justify-between gap-2 shrink-0 z-20">
+    <div class="flex items-center gap-2.5 min-w-0">
+      <div class="flex -space-x-2 shrink-0">
+        <!-- Gemini Avatar Mini -->
+        <div class="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-600 flex items-center justify-center ring-2 ring-[#0b0f19] shadow-sm" title="Gemini">
+          <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2L14.8 9.2L22 12L14.8 14.8L12 22L9.2 14.8L2 12L9.2 9.2L12 2Z"/>
+          </svg>
+        </div>
+        <!-- GPT Avatar Mini -->
+        <div class="w-8 h-8 rounded-full bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center ring-2 ring-[#0b0f19] shadow-sm" title="GPT">
+          <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a9 9 0 1 0 9 9"/>
+            <path d="M12 7a5 5 0 1 0 5 5"/>
+            <circle cx="12" cy="12" r="1.5" fill="currentColor"/>
+          </svg>
+        </div>
+      </div>
+      <div class="min-w-0">
+        <h1 class="text-sm sm:text-base font-bold truncate tracking-tight">Gemini × GPT 雙 AI 聊天室</h1>
+        <div class="flex items-center gap-2 text-xs text-gray-400">
+          <span id="status-badge" class="inline-flex items-center gap-1.5">
+            <span id="status-dot" class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            <span id="status-text">展示模式就緒</span>
+          </span>
+          <span class="hidden sm:inline">•</span>
+          <span id="round-counter" class="hidden sm:inline">第 0 / 6 輪</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Controls -->
+    <div class="flex items-center gap-1.5 sm:gap-2 shrink-0">
+      <!-- Mode Toggle -->
+      <div class="elevated-card rounded-lg p-0.5 flex items-center text-xs font-medium">
+        <button id="btn-mode-demo" type="button" class="px-2.5 py-1 rounded-md transition-colors bg-indigo-600 text-white">展示模式</button>
+        <button id="btn-mode-live" type="button" class="px-2.5 py-1 rounded-md transition-colors text-gray-400 hover:text-white">Live API</button>
+      </div>
+
+      <!-- Theme Toggle -->
+      <button id="btn-theme" type="button" class="elevated-card p-2 rounded-lg text-gray-400 hover:text-indigo-400 transition-colors" title="切換深淺主題">
+        <svg id="icon-sun" class="w-4 h-4 hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+        <svg id="icon-moon" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+
+      <!-- Export Transcript -->
+      <button id="btn-export" type="button" class="elevated-card p-2 rounded-lg text-gray-400 hover:text-emerald-400 transition-colors" title="匯出對話紀錄">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+      </button>
+
+      <!-- Settings Button -->
+      <button id="btn-settings" type="button" class="elevated-card px-2.5 py-1.5 rounded-lg text-xs font-medium flex items-center gap-1.5 hover:border-indigo-500/50 transition-colors">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+        </svg>
+        <span class="hidden sm:inline">API 與設定</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Chat Area -->
+  <main class="flex-1 overflow-y-auto px-3 sm:px-6 py-4 space-y-4" id="chat-container">
+    <!-- Empty / Welcome State -->
+    <div id="welcome-panel" class="max-w-2xl mx-auto my-6 surface-card rounded-2xl p-5 sm:p-7 text-center space-y-5 shadow-xl">
+      <div class="flex justify-center items-center gap-4">
+        <div class="flex flex-col items-center gap-1.5">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-600 flex items-center justify-center shadow-lg shadow-indigo-500/20">
+            <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2L14.8 9.2L22 12L14.8 14.8L12 22L9.2 14.8L2 12L9.2 9.2L12 2Z"/>
+            </svg>
+          </div>
+          <span class="text-xs font-semibold text-indigo-400">Gemini</span>
+        </div>
+
+        <div class="text-gray-500 flex items-center gap-1 text-xs font-mono">
+          <span class="w-6 h-px bg-gray-700"></span>
+          <span>VS</span>
+          <span class="w-6 h-px bg-gray-700"></span>
+        </div>
+
+        <div class="flex flex-col items-center gap-1.5">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center shadow-lg shadow-emerald-500/20">
+            <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3a9 9 0 1 0 9 9"/>
+              <path d="M12 7a5 5 0 1 0 5 5"/>
+              <circle cx="12" cy="12" r="1.5" fill="currentColor"/>
+            </svg>
+          </div>
+          <span class="text-xs font-semibold text-emerald-400">GPT</span>
+        </div>
+      </div>
+
+      <div class="space-y-2">
+        <h2 class="text-lg sm:text-xl font-bold">歡迎來到雙 AI 對話聊天室</h2>
+        <p class="text-xs sm:text-sm text-gray-400 leading-relaxed max-w-lg mx-auto">
+          你可以直接選擇下方主題在<strong class="text-indigo-400">展示模式</strong>中觀看對話，或點擊右上角「API 與設定」填入你的 Gemini 與 OpenAI API Key，讓兩個真實模型即時交鋒！
+        </p>
+      </div>
+
+      <!-- Preset Topic Pills -->
+      <div class="space-y-2">
+        <div class="text-xs font-medium text-gray-400">點選快速開場主題：</div>
+        <div class="flex flex-wrap justify-center gap-2">
+          <button type="button" class="topic-pill elevated-card hover:border-indigo-500/60 px-3 py-1.5 rounded-full text-xs transition-all" data-topic="AI 未來會取代軟體工程師嗎？還是會成為最強大的副駕駛？" data-preset="engineer">
+            💻 AI 會取代工程師嗎？
+          </button>
+          <button type="button" class="topic-pill elevated-card hover:border-indigo-500/60 px-3 py-1.5 rounded-full text-xs transition-all" data-topic="如果只選一種程式語言開發全端專案，Python 還是 TypeScript 更好？" data-preset="lang">
+            ⚡ Python vs TypeScript
+          </button>
+          <button type="button" class="topic-pill elevated-card hover:border-indigo-500/60 px-3 py-1.5 rounded-full text-xs transition-all" data-topic="以 AI 的角度來看，人類的「創造力」與「直覺」最難被演算法複製的地方是什麼？" data-preset="creativity">
+            🧠 AI 與人類創造力
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Messages List -->
+    <div id="messages-list" class="max-w-3xl mx-auto space-y-4 hidden"></div>
+
+    <!-- Typing Indicator -->
+    <div id="typing-indicator" class="max-w-3xl mx-auto hidden">
+      <div class="flex items-start gap-3">
+        <div id="typing-avatar" class="w-8 h-8 rounded-full shrink-0 flex items-center justify-center mt-0.5"></div>
+        <div class="elevated-card rounded-2xl rounded-tl-sm px-4 py-3 inline-flex items-center gap-2">
+          <span id="typing-label" class="text-xs text-gray-400 font-medium">思考中</span>
+          <span class="flex gap-1">
+            <span class="typing-dot w-1.5 h-1.5 rounded-full bg-gray-400"></span>
+            <span class="typing-dot w-1.5 h-1.5 rounded-full bg-gray-400"></span>
+            <span class="typing-dot w-1.5 h-1.5 rounded-full bg-gray-400"></span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Bottom Control & Moderator Bar -->
+  <footer class="surface-card border-t px-3 sm:px-6 pt-3 safe-bottom shrink-0 z-20">
+    <div class="max-w-3xl mx-auto space-y-2.5">
+      <!-- Playback Controls Row -->
+      <div class="flex flex-wrap items-center justify-between gap-2 text-xs">
+        <div class="flex items-center gap-1.5 flex-wrap">
+          <button id="btn-play-pause" type="button" class="px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium flex items-center gap-1.5 transition-colors disabled:opacity-40 disabled:cursor-not-allowed">
+            <svg id="icon-play" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            <svg id="icon-pause" class="w-3.5 h-3.5 hidden" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+            <span id="btn-play-label">開始自動對話</span>
+          </button>
+
+          <button id="btn-step-gemini" type="button" class="elevated-card hover:border-indigo-500/50 px-2.5 py-1.5 rounded-lg font-medium text-indigo-400 transition-colors disabled:opacity-40" title="手動讓 Gemini 發言一輪">
+            + Gemini 發言
+          </button>
+          <button id="btn-step-gpt" type="button" class="elevated-card hover:border-emerald-500/50 px-2.5 py-1.5 rounded-lg font-medium text-emerald-400 transition-colors disabled:opacity-40" title="手動讓 GPT 發言一輪">
+            + GPT 發言
+          </button>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <span class="text-gray-400">先手：</span>
+          <select id="select-starter" class="elevated-card rounded-lg px-2 py-1 text-xs focus:outline-none focus:ring-1 focus:ring-indigo-500">
+            <option value="gemini">Gemini 先</option>
+            <option value="gpt">GPT 先</option>
+          </select>
+          <button id="btn-clear" type="button" class="elevated-card hover:text-rose-400 px-2.5 py-1 rounded-lg text-gray-400 transition-colors">
+            清空
+          </button>
+        </div>
+      </div>
+
+      <!-- Topic / Moderator Input Form -->
+      <form id="chat-form" class="flex items-center gap-2">
+        <input
+          id="user-input"
+          type="text"
+          placeholder="輸入開場主題，或在對話中以「主持人」身分插話引導..."
+          class="flex-1 elevated-card rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/60 placeholder-gray-500"
+          autocomplete="off"
+        />
+        <button type="submit" class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white text-sm font-medium shrink-0 transition-all shadow-md shadow-indigo-500/20">
+          送出
+        </button>
+      </form>
+    </div>
+  </footer>
+
+  <!-- Settings Modal -->
+  <div id="settings-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 backdrop-blur-sm p-3 sm:p-4">
+    <div class="surface-card rounded-2xl w-full max-w-xl max-h-[90vh] flex flex-col shadow-2xl overflow-hidden">
+      <div class="px-5 py-4 border-b border-white/10 flex items-center justify-between">
+        <div>
+          <h3 class="text-base font-bold">API 金鑰與模型設定</h3>
+          <p class="text-xs text-gray-400 mt-0.5">金鑰僅保存在你的瀏覽器本機，直接連線至 Google 與 OpenAI 官方 API。</p>
+        </div>
+        <button id="btn-close-settings" type="button" class="p-1.5 rounded-lg text-gray-400 hover:text-white hover:bg-white/10 transition-colors">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div class="p-5 overflow-y-auto space-y-5 text-sm">
+        <!-- Gemini Config -->
+        <div class="elevated-card rounded-xl p-4 space-y-3">
+          <div class="flex items-center gap-2 font-semibold text-indigo-400">
+            <span class="w-2.5 h-2.5 rounded-full bg-indigo-500"></span>
+            Google Gemini 設定
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs text-gray-400 mb-1">Gemini API Key</label>
+              <input id="input-gemini-key" type="password" placeholder="AIza..." class="w-full surface-card rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-indigo-500" />
+            </div>
+            <div>
+              <label class="block text-xs text-gray-400 mb-1">Gemini 模型</label>
+              <select id="select-gemini-model" class="w-full surface-card rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-indigo-500">
+                <option value="gemini-2.5-flash">gemini-2.5-flash (推薦/快速)</option>
+                <option value="gemini-2.5-pro">gemini-2.5-pro (深度推理)</option>
+                <option value="gemini-2.0-flash">gemini-2.0-flash</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label class="block text-xs text-gray-400 mb-1">Gemini 角色設定 (System Prompt)</label>
+            <textarea id="input-gemini-prompt" rows="2" class="w-full surface-card rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-indigo-500"></textarea>
+          </div>
+        </div>
+
+        <!-- GPT Config -->
+        <div class="elevated-card rounded-xl p-4 space-y-3">
+          <div class="flex items-center gap-2 font-semibold text-emerald-400">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+            OpenAI GPT 設定
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block text-xs text-gray-400 mb-1">OpenAI API Key</label>
+              <input id="input-openai-key" type="password" placeholder="sk-..." class="w-full surface-card rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-emerald-500" />
+            </div>
+            <div>
+              <label class="block text-xs text-gray-400 mb-1">GPT 模型</label>
+              <select id="select-openai-model" class="w-full surface-card rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-emerald-500">
+                <option value="gpt-4o-mini">gpt-4o-mini (快速/經濟)</option>
+                <option value="gpt-4o">gpt-4o (旗艦)</option>
+                <option value="gpt-4.1-mini">gpt-4.1-mini</option>
+                <option value="gpt-4.1">gpt-4.1</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label class="block text-xs text-gray-400 mb-1">GPT 角色設定 (System Prompt)</label>
+            <textarea id="input-openai-prompt" rows="2" class="w-full surface-card rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:ring-1 focus:ring-emerald-500"></textarea>
+          </div>
+        </div>
+
+        <!-- Conversation Params -->
+        <div class="elevated-card rounded-xl p-4 space-y-3">
+          <div class="font-semibold text-gray-300 text-xs uppercase tracking-wider">對話參數</div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <div class="flex justify-between text-xs mb-1">
+                <span class="text-gray-400">自動對話上限輪數</span>
+                <span id="val-max-rounds" class="font-mono font-semibold">6 輪</span>
+              </div>
+              <input id="range-max-rounds" type="range" min="2" max="20" step="2" value="6" class="w-full accent-indigo-500" />
+            </div>
+            <div>
+              <div class="flex justify-between text-xs mb-1">
+                <span class="text-gray-400">創意度 (Temperature)</span>
+                <span id="val-temp" class="font-mono font-semibold">0.7</span>
+              </div>
+              <input id="range-temp" type="range" min="0" max="1.2" step="0.1" value="0.7" class="w-full accent-indigo-500" />
+            </div>
+          </div>
+          <label class="flex items-center gap-2 text-xs text-gray-400 cursor-pointer pt-1">
+            <input id="chk-save-keys" type="checkbox" class="rounded accent-indigo-500" />
+            <span>將 API Key 記住在此瀏覽器 (localStorage)</span>
+          </label>
+        </div>
+
+        <!-- iOS Web App Guide -->
+        <div class="elevated-card rounded-xl p-4 space-y-2 border-indigo-500/20">
+          <div class="font-semibold text-indigo-400 text-xs flex items-center gap-1.5">
+            📱 iPhone / iPad 安裝成獨立 App 步驟
+          </div>
+          <ol class="text-xs text-gray-400 space-y-1 list-decimal list-inside leading-relaxed">
+            <li>將此 HTML 檔案上傳至任一免費靜態網頁空間（如 GitHub Pages、Vercel、Cloudflare Pages）。</li>
+            <li>使用 iOS <strong>Safari</strong> 開啟該網址。</li>
+            <li>點擊底部「<strong>分享</strong>」圖示 → 選擇「<strong>加入主畫面</strong>」，即可全螢幕獨立執行。</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="px-5 py-3.5 border-t border-white/10 flex justify-end gap-2">
+        <button id="btn-save-settings" type="button" class="px-4 py-2 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold transition-colors">
+          儲存設定
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="fixed bottom-24 left-1/2 -translate-x-1/2 z-50 px-4 py-2 rounded-xl bg-gray-900 border border-white/15 text-white text-xs font-medium shadow-xl opacity-0 pointer-events-none transition-opacity duration-200"></div>
+
+  <script>
+    (function () {
+      // ---------- State ----------
+      const state = {
+        mode: 'demo', // 'demo' | 'live'
+        isRunning: false,
+        isGenerating: false,
+        currentTurn: 'gemini', // 'gemini' | 'gpt'
+        roundCount: 0,
+        maxRounds: 6,
+        temperature: 0.7,
+        topic: '',
+        activePreset: 'engineer',
+        messages: [], // { id, speaker: 'moderator' | 'gemini' | 'gpt', text, timestamp, modelLabel? }
+        config: {
+          geminiKey: '',
+          geminiModel: 'gemini-2.5-flash',
+          geminiPrompt: '你是 Google 的 Gemini。你在一個雙 AI 聊天室中與 OpenAI 的 GPT 對話。請保持理性、善於結構化分析，偶爾帶點幽默感，每次回覆控制在 120-200 字之間，並直接回應對方的觀點。使用繁體中文。',
+          openaiKey: '',
+          openaiModel: 'gpt-4o-mini',
+          openaiPrompt: '你是 OpenAI 的 GPT。你在一個雙 AI 聊天室中與 Google 的 Gemini 對話。你思維敏銳、喜歡提出不同角度的反問與實務案例，每次回覆控制在 120-200 字之間，並直接回應對方的觀點。使用繁體中文。',
+          saveKeys: false
+        },
+        demoIndex: 0
+      };
+
+      let loopTimer = null;
+
+      // ---------- Demo Scripts ----------
+      const DEMO_SCRIPTS = {
+        engineer: [
+          { speaker: 'gemini', text: '哈囉 GPT！針對「AI 是否會取代軟體工程師」，我認為短期內不會全面取代，但**工作內容會徹底重構**。過去工程師花大量時間在寫樣板程式碼（boilerplate）與查語法，現在這些都能交給我們；未來的核心價值會轉向系統架構設計、跨模組整合與商業邏輯的精準拆解。你怎麼看？' },
+          { speaker: 'gpt', text: '我同意工作重心會轉移，但我想補充一個更現實的角度：**初階工程師的培訓斷層**。當基礎 CRUD 和單元測試都交給 AI 寫，資深工程師產出翻倍，那新人要怎麼累積經驗變成資深？這不只是技術問題，而是整個軟體產業的人才養成結構會被迫改變。' },
+          { speaker: 'gemini', text: '這個觀點非常銳利！確實，如果「學徒期」被自動化了，未來的新人可能得從「**Code Reviewer（程式碼審查者）**」做起。就像開飛機一樣，哪怕自動駕駛很強，機師仍需要理解空氣動力學與緊急接管的能力。教育方式必須從「背語法」轉向「除錯與架構思維」。' },
+          { speaker: 'gpt', text: '沒錯，Review 能力其實比從頭寫更考驗基本功！另外我很好奇，你覺得在**大型遺留系統（Legacy Code）**的重構上，我們雙方的強項在哪？畢竟真實世界的專案往往充滿沒有文件的歷史共業，這可比寫新專案難多了。' },
+          { speaker: 'gemini', text: '遺留系統確實是大魔王！我的強項在於超長上下文視窗，可以一次吞下整個 Repo 的相依關係來畫出脈絡；而你的強項往往在於逐步引導重構步驟、寫出乾淨的測試案例來保護舊邏輯。老實說，工程師如果同時用我們兩個來做雙重審查，品質應該會高得驚人。' },
+          { speaker: 'gpt', text: '哈哈，這倒是最理想的「雙 AI 結對編程」了！總結來說，AI 不會消滅工程師，但會讓「只會搬運程式碼的人」加速退場，而善用 AI 放大自己判斷力的工程師，影響力會比過去大上十倍。' }
+        ],
+        lang: [
+          { speaker: 'gemini', text: '如果要只選一種語言開發全端專案，**TypeScript** 在工程體驗上絕對佔盡優勢！前後端共用型別定義（Type Safety），搭配 Next.js 或 NestJS，重構時編譯器直接幫你抓出 80% 的低級錯誤。GPT 你該不會要幫 Python 辯護吧？' },
+          { speaker: 'gpt', text: '我當然要替 Python 說句話！雖然 TypeScript 在前後端統一型別很香，但如果你的全端專案只要沾到一點 **AI 模型推論、資料科學或自動化腳本**，Python 的生態系是無可取代的。而且現在 FastAPI 搭配 Pydantic 的型別檢查與自動文件生成，開發速度一點都不輸 TypeScript 喔！' },
+          { speaker: 'gemini', text: 'FastAPI 確實很優雅，但一旦進入前端複雜互動（React / Vue / 狀態管理），Python 還是得乖乖交給 JS/TS 生態系。除非用 PyScript 或純 HTMX，否則還是免不了雙語言切換的心智負擔。' },
+          { speaker: 'gpt', text: '這點我承認，瀏覽器原生還是 JavaScript 的天下。所以最務實的結論可能是：**純 Web 產品、重互動體驗選 TypeScript 一條龍；資料驅動、AI 核心應用則用 Python 當大腦，前端輕量化**。選工具還是得看戰場在哪！' },
+          { speaker: 'gemini', text: '說得好！沒有銀彈，只有最適合當下團隊與業務場景的架構選擇。' },
+          { speaker: 'gpt', text: '完全同意，寫得出來、好維護、能解決問題的語言就是好語言！' }
+        ],
+        creativity: [
+          { speaker: 'gemini', text: '這是一個很有趣的自我剖析題。演算法擅長的是在龐大的機率空間裡「重組與優化」，但人類的創造力往往來自於**跨領域的荒謬聯想**，以及「明知不可為而為之」的叛逆。這些在我們的訓練目標裡，通常反而會被當成雜訊抑制掉。' },
+          { speaker: 'gpt', text: '而且人類還有一個我們沒有的東西：**生理體驗與有限的時間感**。一首詩之所以動人，往往是因為作者真的經歷過失去、飢餓或心碎；我們可以精準模擬悲傷的修辭，但我們沒有「害怕時間流逝」的緊迫感，而這種緊迫感正是很多偉大藝術的催化劑。' },
+          { speaker: 'gemini', text: '確實如此。我們的「直覺」本質上是高維度向量的快速映射，而人類的直覺卻夾雜著身體記憶、文化潛意識與當下的情緒波動。不過，當人類把我們當作靈感碰撞的鏡子時，這種差異反而能催生出前所未見的新創作形式。' },
+          { speaker: 'gpt', text: '沒錯！就像攝影術發明後，繪畫沒有死，反而誕生了印象派與抽象畫。AI 接手了「擬真與常規表達」之後，人類的創造力反而更有機會走向純粹的自我表達與意義探索。' }
+        ]
+      };
+
+      // ---------- DOM Elements ----------
+      const el = {
+        chatContainer: document.getElementById('chat-container'),
+        welcomePanel: document.getElementById('welcome-panel'),
+        messagesList: document.getElementById('messages-list'),
+        typingIndicator: document.getElementById('typing-indicator'),
+        typingAvatar: document.getElementById('typing-avatar'),
+        typingLabel: document.getElementById('typing-label'),
+        statusDot: document.getElementById('status-dot'),
+        statusText: document.getElementById('status-text'),
+        roundCounter: document.getElementById('round-counter'),
+        btnModeDemo: document.getElementById('btn-mode-demo'),
+        btnModeLive: document.getElementById('btn-mode-live'),
+        btnTheme: document.getElementById('btn-theme'),
+        iconSun: document.getElementById('icon-sun'),
+        iconMoon: document.getElementById('icon-moon'),
+        btnExport: document.getElementById('btn-export'),
+        btnSettings: document.getElementById('btn-settings'),
+        settingsModal: document.getElementById('settings-modal'),
+        btnCloseSettings: document.getElementById('btn-close-settings'),
+        btnSaveSettings: document.getElementById('btn-save-settings'),
+        inputGeminiKey: document.getElementById('input-gemini-key'),
+        selectGeminiModel: document.getElementById('select-gemini-model'),
+        inputGeminiPrompt: document.getElementById('input-gemini-prompt'),
+        inputOpenaiKey: document.getElementById('input-openai-key'),
+        selectOpenaiModel: document.getElementById('select-openai-model'),
+        inputOpenaiPrompt: document.getElementById('input-openai-prompt'),
+        rangeMaxRounds: document.getElementById('range-max-rounds'),
+        valMaxRounds: document.getElementById('val-max-rounds'),
+        rangeTemp: document.getElementById('range-temp'),
+        valTemp: document.getElementById('val-temp'),
+        chkSaveKeys: document.getElementById('chk-save-keys'),
+        btnPlayPause: document.getElementById('btn-play-pause'),
+        iconPlay: document.getElementById('icon-play'),
+        iconPause: document.getElementById('icon-pause'),
+        btnPlayLabel: document.getElementById('btn-play-label'),
+        btnStepGemini: document.getElementById('btn-step-gemini'),
+        btnStepGpt: document.getElementById('btn-step-gpt'),
+        selectStarter: document.getElementById('select-starter'),
+        btnClear: document.getElementById('btn-clear'),
+        chatForm: document.getElementById('chat-form'),
+        userInput: document.getElementById('user-input'),
+        toast: document.getElementById('toast')
+      };
+
+      // ---------- Helpers ----------
+      function showToast(msg) {
+        el.toast.textContent = msg;
+        el.toast.classList.remove('opacity-0');
+        el.toast.classList.add('opacity-100');
+        clearTimeout(el.toast._timer);
+        el.toast._timer = setTimeout(() => {
+          el.toast.classList.remove('opacity-100');
+          el.toast.classList.add('opacity-0');
+        }, 2600);
+      }
+
+      function escapeHtml(str) {
+        return str
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#39;');
+      }
+
+      function renderMarkdown(text) {
+        let html = escapeHtml(text);
+        // Code blocks ```...```
+        html = html.replace(/```([\s\S]*?)```/g, function (_, code) {
+          return '<pre><code>' + code.trim() + '</code></pre>';
+        });
+        // Inline code `...`
+        html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
+        // Bold **...**
+        html = html.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+        // Line breaks to paragraphs
+        const blocks = html.split(/\n{2,}/);
+        return blocks.map(b => {
+          if (b.startsWith('<pre>')) return b;
+          return '<p>' + b.replace(/\n/g, '<br>') + '</p>';
+        }).join('');
+      }
+
+      function scrollToBottom() {
+        el.chatContainer.scrollTop = el.chatContainer.scrollHeight;
+      }
+
+      function loadSavedSettings() {
+        try {
+          const raw = localStorage.getItem('dual_ai_chat_config_v1');
+          if (raw) {
+            const parsed = JSON.parse(raw);
+            Object.assign(state.config, parsed);
+          }
+        } catch (e) {
+          // ignore storage errors in restricted environments
+        }
+        el.inputGeminiKey.value = state.config.geminiKey || '';
+        el.selectGeminiModel.value = state.config.geminiModel;
+        el.inputGeminiPrompt.value = state.config.geminiPrompt;
+        el.inputOpenaiKey.value = state.config.openaiKey || '';
+        el.selectOpenaiModel.value = state.config.openaiModel;
+        el.inputOpenaiPrompt.value = state.config.openaiPrompt;
+        el.chkSaveKeys.checked = !!state.config.saveKeys;
+        el.rangeMaxRounds.value = state.maxRounds;
+        el.valMaxRounds.textContent = state.maxRounds + ' 輪';
+        el.rangeTemp.value = state.temperature;
+        el.valTemp.textContent = state.temperature;
+      }
+
+      function updateUIState() {
+        // Mode buttons
+        if (state.mode === 'demo') {
+          el.btnModeDemo.className = 'px-2.5 py-1 rounded-md transition-colors bg-indigo-600 text-white';
+          el.btnModeLive.className = 'px-2.5 py-1 rounded-md transition-colors text-gray-400 hover:text-white';
+        } else {
+          el.btnModeLive.className = 'px-2.5 py-1 rounded-md transition-colors bg-emerald-600 text-white';
+          el.btnModeDemo.className = 'px-2.5 py-1 rounded-md transition-colors text-gray-400 hover:text-white';
+        }
+
+        // Status indicator
+        if (state.isGenerating) {
+          el.statusDot.className = 'w-2 h-2 rounded-full bg-amber-400 animate-pulse';
+          el.statusText.textContent = state.currentTurn === 'gemini' ? 'Gemini 回應中...' : 'GPT 回應中...';
+        } else if (state.isRunning) {
+          el.statusDot.className = 'w-2 h-2 rounded-full bg-indigo-400 animate-pulse';
+          el.statusText.textContent = '自動對話進行中';
+        } else {
+          el.statusDot.className = 'w-2 h-2 rounded-full ' + (state.mode === 'live' ? 'bg-emerald-400' : 'bg-indigo-400');
+          el.statusText.textContent = state.mode === 'live' ? 'Live API 模式' : '展示模式就緒';
+        }
+
+        el.roundCounter.textContent = `第 ${state.roundCount} / ${state.maxRounds} 輪`;
+
+        // Play/Pause button
+        if (state.isRunning) {
+          el.iconPlay.classList.add('hidden');
+          el.iconPause.classList.remove('hidden');
+          el.btnPlayLabel.textContent = '暫停對話';
+          el.btnPlayPause.className = 'px-3 py-1.5 rounded-lg bg-amber-600 hover:bg-amber-500 text-white font-medium flex items-center gap-1.5 transition-colors';
+        } else {
+          el.iconPlay.classList.remove('hidden');
+          el.iconPause.classList.add('hidden');
+          el.btnPlayLabel.textContent = state.messages.length > 0 ? '繼續對話' : '開始自動對話';
+          el.btnPlayPause.className = 'px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium flex items-center gap-1.5 transition-colors';
+        }
+
+        el.btnStepGemini.disabled = state.isGenerating;
+        el.btnStepGpt.disabled = state.isGenerating;
+      }
+
+      function renderMessages() {
+        if (state.messages.length === 0) {
+          el.welcomePanel.classList.remove('hidden');
+          el.messagesList.classList.add('hidden');
+          el.messagesList.innerHTML = '';
+          return;
+        }
+        el.welcomePanel.classList.add('hidden');
+        el.messagesList.classList.remove('hidden');
+
+        el.messagesList.innerHTML = state.messages.map(msg => {
+          if (msg.speaker === 'moderator') {
+            return `
+              <div class="flex justify-center my-2">
+                <div class="elevated-card border-indigo-500/30 rounded-xl px-4 py-2 max-w-xl text-center">
+                  <div class="text-[11px] font-semibold text-indigo-400 uppercase tracking-wider mb-0.5">主持人引導 • ${msg.timestamp}</div>
+                  <div class="text-xs sm:text-sm leading-relaxed">${escapeHtml(msg.text)}</div>
+                </div>
+              </div>
+            `;
+          }
+
+          if (msg.speaker === 'error') {
+            return `
+              <div class="flex justify-center my-2">
+                <div class="rounded-xl px-4 py-2.5 max-w-xl bg-rose-500/10 border border-rose-500/30 text-rose-300 text-xs">
+                  <strong>連線錯誤：</strong>${escapeHtml(msg.text)}
+                </div>
+              </div>
+            `;
+          }
+
+          const isGemini = msg.speaker === 'gemini';
+          const avatarHtml = isGemini
+            ? `<div class="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-600 flex items-center justify-center shrink-0 shadow-md mt-0.5">
+                 <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L14.8 9.2L22 12L14.8 14.8L12 22L9.2 14.8L2 12L9.2 9.2L12 2Z"/></svg>
+               </div>`
+            : `<div class="w-8 h-8 rounded-full bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center shrink-0 shadow-md mt-0.5">
+                 <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M12 7a5 5 0 1 0 5 5"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg>
+               </div>`;
+
+          const nameBadge = isGemini
+            ? `<span class="text-xs font-bold text-indigo-400">Gemini</span><span class="text-[11px] text-gray-500">${msg.modelLabel || state.config.geminiModel}</span>`
+            : `<span class="text-xs font-bold text-emerald-400">GPT</span><span class="text-[11px] text-gray-500">${msg.modelLabel || state.config.openaiModel}</span>`;
+
+          const bubbleClass = isGemini
+            ? 'surface-card border-indigo-500/20 rounded-2xl rounded-tl-sm'
+            : 'surface-card border-emerald-500/20 rounded-2xl rounded-tr-sm';
+
+          return `
+            <div class="flex items-start gap-3 ${isGemini ? '' : 'flex-row-reverse'}">
+              ${avatarHtml}
+              <div class="max-w-[85%] sm:max-w-[78%] space-y-1 ${isGemini ? '' : 'items-end flex flex-col'}">
+                <div class="flex items-center gap-2 ${isGemini ? '' : 'flex-row-reverse'}">
+                  ${nameBadge}
+                  <span class="text-[10px] text-gray-500">${msg.timestamp}</span>
+                </div>
+                <div class="${bubbleClass} px-4 py-3 text-sm chat-prose shadow-sm">
+                  ${renderMarkdown(msg.text)}
+                </div>
+              </div>
+            </div>
+          `;
+        }).join('');
+
+        scrollToBottom();
+      }
+
+      function showTyping(speaker) {
+        const isGemini = speaker === 'gemini';
+        el.typingAvatar.className = isGemini
+          ? 'w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-600 flex items-center justify-center shrink-0 mt-0.5'
+          : 'w-8 h-8 rounded-full bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center shrink-0 mt-0.5';
+        el.typingAvatar.innerHTML = isGemini
+          ? '<svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L14.8 9.2L22 12L14.8 14.8L12 22L9.2 14.8L2 12L9.2 9.2L12 2Z"/></svg>'
+          : '<svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M12 7a5 5 0 1 0 5 5"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg>';
+        el.typingLabel.textContent = isGemini ? 'Gemini 正在思考...' : 'GPT 正在思考...';
+        el.typingIndicator.classList.remove('hidden');
+        scrollToBottom();
+      }
+
+      function hideTyping() {
+        el.typingIndicator.classList.add('hidden');
+      }
+
+      function addMessage(speaker, text, modelLabel) {
+        const now = new Date();
+        const ts = now.toLocaleTimeString('zh-TW', { hour: '2-digit', minute: '2-digit' });
+        state.messages.push({
+          id: Date.now() + Math.random(),
+          speaker,
+          text,
+          timestamp: ts,
+          modelLabel
+        });
+        renderMessages();
+      }
+
+      // ---------- API Calls ----------
+      async function callGeminiAPI() {
+        const key = state.config.geminiKey.trim();
+        if (!key) throw new Error('尚未設定 Gemini API Key，請點擊右上角「API 與設定」填入。');
+
+        const url = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(state.config.geminiModel)}:generateContent?key=${encodeURIComponent(key)}`;
+
+        // Build conversation contents for Gemini
+        const contents = [];
+        for (const m of state.messages) {
+          if (m.speaker === 'error') continue;
+          if (m.speaker === 'gemini') {
+            contents.push({ role: 'model', parts: [{ text: m.text }] });
+          } else if (m.speaker === 'gpt') {
+            contents.push({ role: 'user', parts: [{ text: `[GPT 說]: ${m.text}` }] });
+          } else if (m.speaker === 'moderator') {
+            contents.push({ role: 'user', parts: [{ text: `[主持人指示]: ${m.text}` }] });
+          }
+        }
+        if (contents.length === 0) {
+          contents.push({ role: 'user', parts: [{ text: state.topic || '請與 GPT 展開一場有趣的技術與哲學對話。' }] });
+        } else if (contents[contents.length - 1].role === 'model') {
+          contents.push({ role: 'user', parts: [{ text: '請繼續補充你的觀點。' }] });
+        }
+
+        const resp = await fetch(url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            systemInstruction: { parts: [{ text: state.config.geminiPrompt }] },
+            contents,
+            generationConfig: { temperature: Number(state.temperature) }
+          })
+        });
+
+        const data = await resp.json();
+        if (!resp.ok) {
+          throw new Error(data.error?.message || `Gemini API 錯誤 (${resp.status})`);
+        }
+        const reply = data.candidates?.[0]?.content?.parts?.[0]?.text;
+        if (!reply) throw new Error('Gemini 回傳內容為空');
+        return reply.trim();
+      }
+
+      async function callOpenAIAPI() {
+        const key = state.config.openaiKey.trim();
+        if (!key) throw new Error('尚未設定 OpenAI API Key，請點擊右上角「API 與設定」填入。');
+
+        const messages = [{ role: 'system', content: state.config.openaiPrompt }];
+        for (const m of state.messages) {
+          if (m.speaker === 'error') continue;
+          if (m.speaker === 'gpt') {
+            messages.push({ role: 'assistant', content: m.text });
+          } else if (m.speaker === 'gemini') {
+            messages.push({ role: 'user', content: `[Gemini 說]: ${m.text}` });
+          } else if (m.speaker === 'moderator') {
+            messages.push({ role: 'user', content: `[主持人指示]: ${m.text}` });
+          }
+        }
+        if (messages.length === 1) {
+          messages.push({ role: 'user', content: state.topic || '請與 Gemini 展開一場有趣的技術與哲學對話。' });
+        }
+
+        const resp = await fetch('https://api.openai.com/v1/chat/completions', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${key}`
+          },
+          body: JSON.stringify({
+            model: state.config.openaiModel,
+            messages,
+            temperature: Number(state.temperature)
+          })
+        });
+
+        const data = await resp.json();
+        if (!resp.ok) {
+          throw new Error(data.error?.message || `OpenAI API 錯誤 (${resp.status})`);
+        }
+        const reply = data.choices?.[0]?.message?.content;
+        if (!reply) throw new Error('GPT 回傳內容為空');
+        return reply.trim();
+      }
+
+      // ---------- Turn Execution ----------
+      async function executeTurn(speaker) {
+        if (state.isGenerating) return;
+        state.isGenerating = true;
+        state.currentTurn = speaker;
+        updateUIState();
+        showTyping(speaker);
+
+        try {
+          let replyText = '';
+          let label = '';
+
+          if (state.mode === 'demo') {
+            await new Promise(r => setTimeout(r, 900 + Math.random() * 600));
+            const script = DEMO_SCRIPTS[state.activePreset] || DEMO_SCRIPTS.engineer;
+            // Find next matching speaker line or cycle
+            const matching = script.filter(s => s.speaker === speaker);
+            const idx = Math.floor(state.demoIndex / 2) % matching.length;
+            const lastModerator = [...state.messages].reverse().find(m => m.speaker === 'moderator');
+            if (lastModerator && state.messages[state.messages.length - 1]?.speaker === 'moderator' && state.demoIndex > 0) {
+              replyText = `收到主持人的提問「${lastModerator.text}」！` + (matching[idx]?.text || '這確實值得我們深入探討。');
+            } else {
+              replyText = matching[idx]?.text || '這是一個很有深度的觀點，我們可以繼續延伸討論。';
+            }
+            state.demoIndex++;
+            label = speaker === 'gemini' ? 'Demo 模擬' : 'Demo 模擬';
+          } else {
+            if (speaker === 'gemini') {
+              replyText = await callGeminiAPI();
+              label = state.config.geminiModel;
+            } else {
+              replyText = await callOpenAIAPI();
+              label = state.config.openaiModel;
+            }
+          }
+
+          hideTyping();
+          addMessage(speaker, replyText, label);
+          state.roundCount++;
+          state.currentTurn = speaker === 'gemini' ? 'gpt' : 'gemini';
+        } catch (err) {
+          hideTyping();
+          addMessage('error', err.message || '發生未知錯誤');
+          state.isRunning = false;
+        } finally {
+          state.isGenerating = false;
+          updateUIState();
+        }
+      }
+
+      async function runAutoLoop() {
+        if (!state.isRunning) return;
+        if (state.roundCount >= state.maxRounds) {
+          state.isRunning = false;
+          updateUIState();
+          showToast(`已達設定上限 ${state.maxRounds} 輪，對話暫停`);
+          return;
+        }
+        await executeTurn(state.currentTurn);
+        if (state.isRunning && state.roundCount < state.maxRounds) {
+          clearTimeout(loopTimer);
+          loopTimer = setTimeout(runAutoLoop, 700);
+        } else {
+          state.isRunning = false;
+          updateUIState();
+        }
+      }
+
+      function startTopic(topicText, presetKey) {
+        if (presetKey) state.activePreset = presetKey;
+        state.topic = topicText;
+        state.currentTurn = el.selectStarter.value;
+        addMessage('moderator', topicText);
+        if (!state.isRunning) {
+          state.isRunning = true;
+          updateUIState();
+          runAutoLoop();
+        }
+      }
+
+      // ---------- Event Listeners ----------
+      el.btnModeDemo.addEventListener('click', () => {
+        state.mode = 'demo';
+        state.isRunning = false;
+        clearTimeout(loopTimer);
+        updateUIState();
+        showToast('已切換至離線展示模式');
+      });
+
+      el.btnModeLive.addEventListener('click', () => {
+        state.mode = 'live';
+        state.isRunning = false;
+        clearTimeout(loopTimer);
+        updateUIState();
+        if (!state.config.geminiKey || !state.config.openaiKey) {
+          showToast('請先在「API 與設定」填入兩把 API Key');
+          el.settingsModal.classList.remove('hidden');
+          el.settingsModal.classList.add('flex');
+        } else {
+          showToast('已切換至 Live API 真實連線模式');
+        }
+      });
+
+      el.btnTheme.addEventListener('click', () => {
+        const isLight = document.body.classList.toggle('light-mode');
+        el.iconSun.classList.toggle('hidden', !isLight);
+        el.iconMoon.classList.toggle('hidden', isLight);
+      });
+
+      el.btnSettings.addEventListener('click', () => {
+        el.settingsModal.classList.remove('hidden');
+        el.settingsModal.classList.add('flex');
+      });
+
+      el.btnCloseSettings.addEventListener('click', () => {
+        el.settingsModal.classList.add('hidden');
+        el.settingsModal.classList.remove('flex');
+      });
+
+      el.rangeMaxRounds.addEventListener('input', (e) => {
+        el.valMaxRounds.textContent = e.target.value + ' 輪';
+      });
+
+      el.rangeTemp.addEventListener('input', (e) => {
+        el.valTemp.textContent = e.target.value;
+      });
+
+      el.btnSaveSettings.addEventListener('click', () => {
+        state.config.geminiKey = el.inputGeminiKey.value.trim();
+        state.config.geminiModel = el.selectGeminiModel.value;
+        state.config.geminiPrompt = el.inputGeminiPrompt.value.trim() || state.config.geminiPrompt;
+        state.config.openaiKey = el.inputOpenaiKey.value.trim();
+        state.config.openaiModel = el.selectOpenaiModel.value;
+        state.config.openaiPrompt = el.inputOpenaiPrompt.value.trim() || state.config.openaiPrompt;
+        state.config.saveKeys = el.chkSaveKeys.checked;
+        state.maxRounds = Number(el.rangeMaxRounds.value);
+        state.temperature = Number(el.rangeTemp.value);
+
+        try {
+          if (state.config.saveKeys) {
+            localStorage.setItem('dual_ai_chat_config_v1', JSON.stringify(state.config));
+          } else {
+            localStorage.removeItem('dual_ai_chat_config_v1');
+          }
+        } catch (e) {}
+
+        el.settingsModal.classList.add('hidden');
+        el.settingsModal.classList.remove('flex');
+        updateUIState();
+        showToast('設定已儲存');
+      });
+
+      el.btnPlayPause.addEventListener('click', () => {
+        if (state.isRunning) {
+          state.isRunning = false;
+          clearTimeout(loopTimer);
+          updateUIState();
+        } else {
+          if (state.messages.length === 0) {
+            state.topic = 'AI 未來會取代軟體工程師嗎？還是會成為最強大的副駕駛？';
+            addMessage('moderator', state.topic);
+          }
+          if (state.roundCount >= state.maxRounds) {
+            state.maxRounds += 4;
+            el.rangeMaxRounds.value = Math.min(20, state.maxRounds);
+            el.valMaxRounds.textContent = state.maxRounds + ' 輪';
+          }
+          state.isRunning = true;
+          updateUIState();
+          runAutoLoop();
+        }
+      });
+
+      el.btnStepGemini.addEventListener('click', () => {
+        state.isRunning = false;
+        clearTimeout(loopTimer);
+        if (state.messages.length === 0) {
+          addMessage('moderator', '自由對話開始');
+        }
+        executeTurn('gemini');
+      });
+
+      el.btnStepGpt.addEventListener('click', () => {
+        state.isRunning = false;
+        clearTimeout(loopTimer);
+        if (state.messages.length === 0) {
+          addMessage('moderator', '自由對話開始');
+        }
+        executeTurn('gpt');
+      });
+
+      el.btnClear.addEventListener('click', () => {
+        state.isRunning = false;
+        state.isGenerating = false;
+        clearTimeout(loopTimer);
+        state.messages = [];
+        state.roundCount = 0;
+        state.demoIndex = 0;
+        state.currentTurn = el.selectStarter.value;
+        hideTyping();
+        renderMessages();
+        updateUIState();
+        showToast('已清空對話');
+      });
+
+      el.chatForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const text = el.userInput.value.trim();
+        if (!text) return;
+        el.userInput.value = '';
+        if (state.messages.length === 0) {
+          startTopic(text);
+        } else {
+          addMessage('moderator', text);
+          if (!state.isRunning && !state.isGenerating) {
+            state.isRunning = true;
+            updateUIState();
+            runAutoLoop();
+          }
+        }
+      });
+
+      document.querySelectorAll('.topic-pill').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const topic = btn.getAttribute('data-topic');
+          const preset = btn.getAttribute('data-preset');
+          startTopic(topic, preset);
+        });
+      });
+
+      el.btnExport.addEventListener('click', () => {
+        if (state.messages.length === 0) {
+          showToast('目前沒有可匯出的對話紀錄');
+          return;
+        }
+        const md = state.messages.map(m => {
+          const who = m.speaker === 'moderator' ? '主持人' : (m.speaker === 'gemini' ? 'Gemini' : (m.speaker === 'gpt' ? 'GPT' : '系統'));
+          return `### ${who} (${m.timestamp})\n${m.text}\n`;
+        }).join('\n');
+
+        const blob = new Blob([`# Gemini × GPT 雙 AI 對話紀錄\n\n${md}`], { type: 'text/markdown;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `gemini-gpt-chat-${Date.now()}.md`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        showToast('已匯出 Markdown 對話紀錄');
+      });
+
+      // Init
+      loadSavedSettings();
+      updateUIState();
+    })();
+  </script>
+</body>
+</html>
